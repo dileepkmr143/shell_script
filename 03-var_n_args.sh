@@ -4,7 +4,7 @@ username=$1
 password=$2
 RED="\e[31m"
 NONE="\e[0m"
-timestamp=$((date)+H)
+timestamp=$(date)
 
 echo -e "Username entered is $RED $username $NONE"
 echo -e "Password entered is $password"
