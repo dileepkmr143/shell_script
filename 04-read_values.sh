@@ -7,10 +7,10 @@ N="\e[0m"
 
 read -s username
 
-echo "Username entered is $R $username $N"
+echo -e "Username entered is $R $username $N"
 
 echo "please enter password"
 
 read -s password
 
-echo "entered username is $R $username $N and password is $R $password $N"
+echo -e "entered username is $R $username $N and password is $R $password $N"
