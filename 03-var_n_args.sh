@@ -5,5 +5,5 @@ password=$2
 RED=\e[31m
 NONE=\e[0m
 
-echo "Username entered is $RED $username $NONE"
-echo "Password entered is $password"
+echo -e "Username entered is $RED $username $NONE"
+echo -e "Password entered is $password"
