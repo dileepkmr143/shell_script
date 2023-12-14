@@ -14,3 +14,7 @@ echo "please enter password"
 read -s password
 
 echo -e "entered username is $R $username $N and password is $R $password $N"
+
+echo "total no of args passed are $#"
+echo "args passed are $@"
+echo "script name passed $0"
