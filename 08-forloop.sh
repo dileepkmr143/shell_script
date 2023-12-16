@@ -6,9 +6,9 @@ read $num1
 
 echo "please enter number2"
 
-read -s $num2
+read $num2
 
-for $num1 in {1..10}
+for (( i=1; i <=num1; i++ ))
 do
     echo "number to be print $num1"
 done
