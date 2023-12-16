@@ -1,10 +1,10 @@
 #!/bin/bash
 
-ID=$(id -u)
+new=$(id -u)
 
-if [ $ID == 0 ]
+if [ $new -eq 0 ]
 then
-    echo "user is root user"
+    echo "user is root"
 else
-    echo "user is not root user. run installation with root privileges"
+    echo "not a root user, can't install"
 fi
