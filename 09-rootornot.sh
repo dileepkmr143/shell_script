@@ -2,7 +2,7 @@
 
 ID=$(id -u)
 
-if [ $ID -eq 0 ]
+if [ $ID -ne 0 ]
 then
     echo "user is root user"
 else
