@@ -8,7 +8,7 @@ echo "please enter number2"
 
 read -s $num2
 
-for((i=1;i<=num2;i++))
+for $num1..$num2
 do
-    echo "number to be print $i"
+    echo "number to be print $num1"
 done
