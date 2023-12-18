@@ -1,5 +1,5 @@
 #!/bin/bash
 
-date=$(date)
+date=$(date +%F-%M-%H-%S )
 
 echo "date and time is $date"
