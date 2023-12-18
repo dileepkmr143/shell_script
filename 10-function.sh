@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sud=$(du -u)
+sud=$(id -u)
 
 if [ $sud -eq 0 ]{
     echo "user has sudo access"
