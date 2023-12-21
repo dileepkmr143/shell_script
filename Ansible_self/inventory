@@ -10,3 +10,8 @@
 [roboshop:children]
 web
 catalogue
+
+[localhost:vars]
+name=dileep
+age=32
+branch=cse
