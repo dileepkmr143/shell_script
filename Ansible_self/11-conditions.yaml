@@ -1,0 +1,12 @@
+# retrieve results from last run command and print
+- name: retrieve command results and print
+  hosts: localhost
+  tasks:
+  - name: retrieve command results
+    ansible.builtin.command: id roboshop
+    register: user
+    ignore_errors: true
+
+  - name: print last run command results
+    ansible.builtin.debug:
+      msg: "last run command results {{user}}"
