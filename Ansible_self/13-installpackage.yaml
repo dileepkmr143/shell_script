@@ -1,0 +1,14 @@
+# install packages using package module
+- name: install package
+  hosts: localhost
+  become: true
+  tasks:
+  - name: install package
+    ansible.builtin.package:
+      name: {{item}}
+      state: present
+    loop:
+    - git
+    - ansible
+    - nginx
+    - postfix
