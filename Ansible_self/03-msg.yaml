@@ -1,14 +1,14 @@
 - name: play1 and task1
   hosts: localhost
   tasks:
-    - name: task1
-      ansible.builtin.debug:
-        msg "msg from play1 and task1"
+  - name: task1
+    ansible.builtin.debug:
+      msg "msg from play1 and task1"
 
 
 - name: play2 and task2
   hosts: localhost
   tasks:
-    - name: task2
-      ansible.builtin.debug:
-        msg "msg from play2 and task2"
+  - name: task2
+    ansible.builtin.debug:
+      msg "msg from play2 and task2"
