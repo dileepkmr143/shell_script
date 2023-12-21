@@ -5,7 +5,7 @@
   tasks:
   - name: install package
     ansible.builtin.package:
-      name: {{item}}
+      name: "{{item}}"
       state: present
     loop:
     - git
