@@ -1,7 +1,7 @@
 #variables from other files
 - name: variables from other files
   hosts: localhost
-  var_files:
+  vars_files:
   - variables.yaml
   tasks:
   - name: variables from files
