@@ -9,4 +9,5 @@
   - name: start nginx
     ansible.builtin.package:
       name: nginx
+      become: true
       service: started
