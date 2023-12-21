@@ -9,4 +9,13 @@
 
   - name: print last run command results
     ansible.builtin.debug:
-      msg: "last run command results {{user.rc}}"
+      msg: "last run command results {{user}}"
+
+  - name: print last command exit code
+    ansible.builtin.debug:
+      msg: "last run command exit code: {{user.rc}}"
+
+  - name: create user based on condition
+    ansible.builtin.user:
+      name: roboshop
+    when: user.rc != 0      #conditional statement
