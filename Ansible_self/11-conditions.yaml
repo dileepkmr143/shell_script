@@ -1,6 +1,7 @@
 # retrieve results from last run command and print
 - name: retrieve command results and print
   hosts: localhost
+  become: true
   tasks:
   - name: retrieve command results
     ansible.builtin.command: id roboshop
