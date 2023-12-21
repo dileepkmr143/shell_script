@@ -1,0 +1,12 @@
+#passing variables from prompt
+- name: passing variables from prompt
+  hosts: localhost
+  vars_prompt:
+  - name: user
+    prompt: "please enter your username"
+    private: false
+
+  tasks:
+  - name: dislay the entered text
+    ansible.builtin.debug:
+      msg: "Entered username is {{user}}"
