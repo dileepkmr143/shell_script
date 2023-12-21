@@ -6,4 +6,4 @@
   tasks:
   - name: variables from files
     ansible.builtin.debug:
-      msg: "i have completed {{course}} with duration of {{duration}} and my branch is {{branch}} with roll number {{roll no}}"
+      msg: "i have completed {{course}} with duration of {{duration}} and my branch is {{branch}} with roll number {{rollno}}"
