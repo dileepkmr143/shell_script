@@ -11,6 +11,9 @@
 web
 catalogue
 
+[localhost]
+localhost
+
 [localhost:vars]
 name="dileep"
 age="32"
