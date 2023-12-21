@@ -9,4 +9,4 @@
 
   - name: print last run command results
     ansible.builtin.debug:
-      msg: "last run command results {{user}}"
+      msg: "last run command results {{user.rc}}"
