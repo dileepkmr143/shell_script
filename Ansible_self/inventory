@@ -12,6 +12,6 @@ web
 catalogue
 
 [localhost:vars]
-name=dileep
-age=32
-branch=cse
+name="dileep"
+age="32"
+branch="cse"
