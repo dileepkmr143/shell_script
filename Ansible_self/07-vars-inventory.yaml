@@ -1,0 +1,7 @@
+#passing variables from inventory
+- name: pass values from inventory
+  hosts: localhost
+  tasks:
+  - name: display values from inventory
+    ansible.builtin.debug:
+      msg: " hi my name is {{name}} and age is {{age}} and i have studied in branch {{branch}}"
