@@ -1,0 +1,10 @@
+- name: passing variables into playbook
+  hosts: localhost
+  vars:
+    course: "devops"
+    trainer: "dileep"
+    duration: "110hours"
+  tasks:
+  - name: passing variables
+    ansible.builtin.debug:
+      msg: "hi welcome to {{course}} and the trainer is {{trainer}} and duration of course is {{duration}}"
