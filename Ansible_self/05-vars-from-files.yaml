@@ -1,0 +1,9 @@
+#variables from other files
+- name: variables from other files
+  hosts: localhost
+  var_files:
+  - variables.yaml
+  tasks:
+  - name: variables from files
+    ansible.builtin.debug:
+      msg: "i have completed {{course}} with duration of {{duration}} and my branch is {{branch}} with roll number {{roll no}}"
