@@ -1,0 +1,12 @@
+192.168.10.1
+20.32.19.54
+
+[web]
+195.143.12.1
+
+[catalogue]
+90.91.94.35
+
+[roboshop:children]
+web
+catalogue

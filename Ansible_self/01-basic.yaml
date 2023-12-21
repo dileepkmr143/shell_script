@@ -1,0 +1,4 @@
+- name: Ansible test
+  host: localhost
+  ansible.builtin.debug:
+    msg: "first ansible script"
