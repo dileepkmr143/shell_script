@@ -1,4 +1,6 @@
-course: "Btech"
-duration: "4 years"
+var1: "variable1 passed from external file"
+var2: "variable2 passed from external file"
 branch: "CSE"
 rollno: "08f61a516"
+name: "dileep"
+age: "32"

@@ -1,0 +1,17 @@
+#check preference of variables from different places
+- name: check preference of variables
+  hosts: localhost
+  vars:
+    var1: "variable1 passed from vars"
+    var2: "variable2 passed from vars"
+  vars_files:
+  - variables.yaml
+  vars_prompt:
+    name: var1
+    prompt: "please enter variable to be passed from prompt"
+    private: false
+  tasks:
+  - name: display variables passed from different sources
+    ansible.builtin.debug:
+      msg: "variables passed from different sources are {{var1}} and {{var2}}"
+   
