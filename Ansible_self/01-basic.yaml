@@ -1,4 +1,5 @@
 - name: Ansible test
-  host: localhost
-  ansible.builtin.debug:
-    msg: "first ansible script"
+  host: web
+  tasks:
+  - name: ping the server
+    ansible.builtin.ping:
